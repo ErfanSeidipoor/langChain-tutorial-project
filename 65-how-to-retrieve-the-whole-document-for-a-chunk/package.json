@@ -1,0 +1,35 @@
+{
+  "name": "65-how-to-retrieve-the-whole-document-for-a-chunk",
+  "version": "1.0.0",
+  "description": "This repository contains a series of examples demonstrating how to use LangChain for parent document retrieval.",
+  "main": "index.js",
+  "scripts": {
+    "parent-document-retriever": "node -r ts-node/register --env-file=.env src/1-parent-document-retriever",
+    "score-threshold": "node -r ts-node/register --env-file=.env src/2-score-threshold.ts",
+    "with-contextual-chunk-headers": "node -r ts-node/register --env-file=.env src/3-with-contextual-chunk-headers.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "@langchain/textsplitters": "^0.1.0",
+    "hnswlib-node": "^3.0.0",
+    "langchain": "^0.3.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

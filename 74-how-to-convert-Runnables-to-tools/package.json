@@ -1,0 +1,39 @@
+{
+  "name": "74-how-to-convert-runnables-to-tools",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to convert LangChain runnables into tools using various examples.",
+  "main": "index.js",
+  "scripts": {
+    "1-example": "node -r ts-node/register --env-file=.env src/1-example.ts",
+    "2-example": "node -r ts-node/register --env-file=.env src/2-example.ts",
+    "3-example": "node -r ts-node/register --env-file=.env src/3-example.ts",
+    "4-example": "node -r ts-node/register --env-file=.env src/4-example.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "@langchain/textsplitters": "^0.1.0",
+    "hnswlib-node": "^3.0.0",
+    "langchain": "^0.3.5",
+    "peggy": "^4.2.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "3-build-a-chatbot-with-langgraph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "1.basic": "node -r ts-node/register --env-file=.env src/1.basic.ts",
+    "2.with-langgraph": "node -r ts-node/register --env-file=.env src/2.with-langgraph.ts",
+    "3.prompt-template": "node -r ts-node/register --env-file=.env src/3.prompt-template.ts",
+    "4.prompt-template": "node -r ts-node/register --env-file=.env src/4.prompt-template.ts",
+    "5.managing-history": "node -r ts-node/register --env-file=.env src/5.managing-history.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/openai": "^0.3.11",
+    "langchain": "^0.3.2",
+    "uuid": "^10.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

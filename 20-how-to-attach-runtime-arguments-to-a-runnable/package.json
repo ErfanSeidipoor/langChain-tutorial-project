@@ -1,0 +1,33 @@
+{
+  "name": "20-how-to-attach-runtime-arguments-to-a-runnable",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Sometimes we want to invoke a Runnable within a RunnableSequence with constant arguments that are not part of the output of the preceding Runnable in the sequence, and which are not part of the user input. We can use the Runnable.bind() method to set these arguments ahead of time.",
+  "scripts": {
+    "stop": "node -r ts-node/register --env-file=.env src/1-stop.ts",
+    "tool": "node -r ts-node/register --env-file=.env src/2-tool.ts"
+  },
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "langchain": "^0.3.5",
+    "zod": "^3.23.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

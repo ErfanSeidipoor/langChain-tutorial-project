@@ -1,0 +1,37 @@
+{
+  "name": "32-how-to-use-example-selectors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "basic": "node -r ts-node/register --env-file=.env src/1-basic.ts",
+    "by-length": "node -r ts-node/register --env-file=.env src/2-by-length",
+    "by-similarity": "node -r ts-node/register --env-file=.env src/3-by-similarity",
+    "vectorstore": "node -r ts-node/register --env-file=.env src/4-vectorstore",
+    "filtering": "node -r ts-node/register --env-file=.env src/5-filtering"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "hnswlib-node": "^3.0.0",
+    "langchain": "^0.3.5",
+    "zod": "^3.23.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

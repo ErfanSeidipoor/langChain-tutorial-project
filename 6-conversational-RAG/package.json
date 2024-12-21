@@ -1,0 +1,35 @@
+{
+  "name": "6-conversational-rag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "basic": "node -r ts-node/register --env-file=.env src/1-basic.ts",
+    "chat-history": "node -r ts-node/register --env-file=.env src/2-chat-history.ts",
+    "runnable-with-message-history": "node -r ts-node/register --env-file=.env src/3-runnable-with-message-history.ts",
+    "stream": "node -r ts-node/register --env-file=.env src/4-stream.ts",
+    "agent": "node -r ts-node/register --env-file=.env src/5-agent.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.7",
+    "@langchain/core": "^0.3.13",
+    "@langchain/google-vertexai": "^0.1.0",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/openai": "^0.3.11",
+    "cheerio": "^1.0.0",
+    "langchain": "^0.3.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

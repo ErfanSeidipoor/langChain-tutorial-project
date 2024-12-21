@@ -1,0 +1,30 @@
+{
+  "name": "build-a-chatbot-with-runnablewithmessagehistory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "basic": "node -r ts-node/register --env-file=.env src/basic.ts",
+    "in-memory": "node -r ts-node/register --env-file=.env src/in-memory.ts",
+    "filter-chat-history": "node -r ts-node/register --env-file=.env src/filter-chat-history.ts",
+    "stream": "node -r ts-node/register --env-file=.env src/stream.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "^0.3.13",
+    "@langchain/openai": "^0.3.11",
+    "langchain": "^0.3.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

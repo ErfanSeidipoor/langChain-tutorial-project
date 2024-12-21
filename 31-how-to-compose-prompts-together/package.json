@@ -1,0 +1,34 @@
+{
+  "name": "31-how-to-compose-prompts-together",
+  "version": "1.0.0",
+  "description": "This project is a tutorial on how to compose prompts together using Langchain, a powerful AI framework.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "string": "node -r ts-node/register --env-file=.env src/1-string.ts",
+    "chat": "node -r ts-node/register --env-file=.env src/2-chat.ts",
+    "pipeline": "node -r ts-node/register --env-file=.env src/3-pipeline.ts"
+  },
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "langchain": "^0.3.5",
+    "zod": "^3.23.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "5-build-a-retrieval-augmented-generation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "basic": "node -r ts-node/register --env-file=.env src/1-basic.ts",
+    "load": "node -r ts-node/register --env-file=.env src/2-load.ts",
+    "split-markdown": "node -r ts-node/register --env-file=.env src/3-split-markdown.ts",
+    "split-html": "node -r ts-node/register --env-file=.env src/4-split-html.ts",
+    "retrieve": "node -r ts-node/register --env-file=.env src/5-retrieve.ts",
+    "runnable-sequence": "node -r ts-node/register --env-file=.env src/6-runnable-sequence",
+    "prompt": "node -r ts-node/register --env-file=.env src/7-prompt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.7",
+    "@langchain/core": "^0.3.13",
+    "@langchain/google-vertexai": "^0.1.0",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/openai": "^0.3.11",
+    "cheerio": "^1.0.0",
+    "langchain": "^0.3.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

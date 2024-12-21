@@ -1,0 +1,37 @@
+{
+  "name": "8-query-analysis-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "load-documents": "node -r ts-node/register --env-file=.env src/1-load-documents.ts",
+    "index-documents": "node -r ts-node/register --env-file=.env src/2-index-documents.ts",
+    "retrieve-documents": "node -r ts-node/register --env-file=.env src/3-retrieve-documents.ts",
+    "query-schema": "node -r ts-node/register --env-file=.env src/4-query-schema.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/openai": "^0.3.11",
+    "chromadb": "^1.9.2",
+    "date-fns": "^4.1.0",
+    "langchain": "^0.3.5",
+    "youtube-transcript": "^1.2.1",
+    "youtubei.js": "^11.0.1",
+    "zod": "^3.23.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

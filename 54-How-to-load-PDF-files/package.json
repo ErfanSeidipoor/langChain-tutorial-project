@@ -1,0 +1,35 @@
+{
+  "name": "53-how-to-load-CSV-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "with-pdf-parse": "node -r ts-node/register --env-file=.env src/1-with-pdf-parse.ts",
+    "with-pdfjs-dist": "node -r ts-node/register --env-file=.env src/2-with-pdfjs-dist.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "d3-dsv": "2",
+    "langchain": "^0.3.5",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.8.69"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

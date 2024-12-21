@@ -1,0 +1,37 @@
+{
+  "name": "57-how-to-split-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "node -r ts-node/register --env-file=.env src/1-js.ts",
+    "python": "node -r ts-node/register --env-file=.env src/2-python.ts",
+    "markdown": "node -r ts-node/register --env-file=.env src/3-markdown.ts",
+    "latex": "node -r ts-node/register --env-file=.env src/4-latex.ts",
+    "html": "node -r ts-node/register --env-file=.env src/5-html.ts",
+    "solidity": "node -r ts-node/register --env-file=.env src/6-solidity.ts",
+    "php": "node -r ts-node/register --env-file=.env src/7-php.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/cohere": "^0.3.1",
+    "@langchain/community": "^0.3.11",
+    "@langchain/core": "0.3.13",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/ollama": "^0.1.1",
+    "@langchain/openai": "^0.3.11",
+    "@langchain/textsplitters": "^0.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.3.13"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
